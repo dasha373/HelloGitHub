@@ -99,14 +99,12 @@ public class MainActivity extends Activity {
 
     private void setUpMap()
     {
-        // Do a null check to confirm that we have not already instantiated the map.
+        //Перевіряєм чи нема вже створеної карти
         if (mMap == null)
         {
-            // Try to obtain the map from the SupportMapFragment.
+            //Спроба отримати карту від SupportMapFragment
             mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.googleMapFragment)).getMap();
-
-            // Check if we were successful in obtaining the map.
-
+            // Перевірка якщо карта успішно отримана...
             if (mMap != null)
             {
                 mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener()
