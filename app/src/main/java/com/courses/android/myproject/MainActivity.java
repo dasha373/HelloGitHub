@@ -99,12 +99,12 @@ public class MainActivity extends Activity {
 
     private void setUpMap()
     {
-        //Перевіряєм чи нема вже створеної карти
+
         if (mMap == null)
         {
-            //Спроба отримати карту від SupportMapFragment
+
             mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.googleMapFragment)).getMap();
-            // Перевірка якщо карта успішно отримана...
+
             if (mMap != null)
             {
                 mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener()
